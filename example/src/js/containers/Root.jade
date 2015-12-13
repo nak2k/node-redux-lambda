@@ -1,0 +1,11 @@
+.Root
+  main
+    h1 redux-lambda example
+    section
+      | Facebook Login Status : 
+      = this.props.facebookLoginStatus.status
+    if this.props.facebookLoginStatus.status === 'connected'
+      section
+        button(onClick=this.props.ping) Ping
+      section
+        code: pre: = this.props.result

@@ -1,0 +1,10 @@
+{
+  "name": "redux-lambda-example-lambda",
+  "version": "0.0.1",
+  "private": true,
+  "description": "redux-lambda example",
+  "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
+  "dependencies": {
+    "redux-lambda": "file:../../.."
+  }
+}

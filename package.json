@@ -1,0 +1,38 @@
+{
+  "name": "redux-lambda",
+  "version": "0.0.1",
+  "description": "Redux middleware for AWS Lambda",
+  "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/nak2k/node-redux-lambda/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13"
+  },
+  "homepage": "https://github.com/nak2k/node-redux-lambda",
+  "keywords": [
+    "aws",
+    "lambda",
+    "redux"
+  ],
+  "license": "MIT",
+  "main": "client",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nak2k/node-redux-lambda.git"
+  },
+  "scripts": {
+    "build": "babel --presets es2015 -d ./ src/",
+    "prepublish": "npm run build"
+  },
+  "files": [
+    "README.md",
+    "client/",
+    "server/"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
