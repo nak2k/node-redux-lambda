@@ -4,4 +4,4 @@ export const applyMiddleware = (...middlewares) => store => (event, context) =>
   .reduceRight(
     (dispatch, next) => next(dispatch),
     action => context.done(null, action)
-  )(event);
+  )(event, context);
